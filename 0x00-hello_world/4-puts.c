@@ -1,7 +1,10 @@
 #include <stdio.h>
-/*The code bellow puts a simple statement on the console*/
+/**
+ *main - entry point
+ *return - always zero (success)
+ * */
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
-return 0;
+return (0);
 }
