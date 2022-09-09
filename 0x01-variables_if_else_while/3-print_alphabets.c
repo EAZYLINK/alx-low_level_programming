@@ -20,4 +20,5 @@ while (ALPHABET <= 'Z')
 putchar(ALPHABET);
 }
 putchar('\n');
+return (0);
 }
