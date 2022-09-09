@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include (stdlib.h>
+#include <stdlib.h>
 
 /**
  *main - Entry point
@@ -8,12 +8,12 @@
 
 int main(void)
 {
-  char alpabet;
-  alphabet = 'a';
-  while(alphabet <= 'z')
-    {
-      putchar("%c ", alphabet);
-      alphabet ++;
-    }
-  return (0);
+char alphabet;
+alphabet = 'a';
+while (alphabet <= 'z')
+{
+putchar("%c ", alphabet);
+alphabet + +;
+}
+return (0);
 }
