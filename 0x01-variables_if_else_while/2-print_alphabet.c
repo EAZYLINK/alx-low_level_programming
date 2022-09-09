@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  *main - Entry point
@@ -12,8 +11,8 @@ char alphabet;
 alphabet = 'a';
 while (alphabet <= 'z')
 {
-putchar("%c ", alphabet);
-alphabet + +;
+putchar(alphabet);
+alphabet++;
 }
 return (0);
 }
