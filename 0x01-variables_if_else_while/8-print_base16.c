@@ -12,6 +12,7 @@ char alphabet = 'a';
 while (n < 58)
 {
 putchar(n);
+n++;
 }
 while (alphabet <= 'f')
 {
