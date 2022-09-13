@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -6,7 +5,7 @@
  * Return: Always 0 (success)
  */
 
-int main(void)
+void print_alphabet(void)
 {
 char c = 'a';
 while(c <= 'z')
