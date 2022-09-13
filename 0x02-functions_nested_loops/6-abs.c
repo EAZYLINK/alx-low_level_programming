@@ -6,15 +6,15 @@
  * Return: always positive
  */
 
-int _abs(int)
+int _abs(n)
 {
-if (int < 0)
+if (n < 0)
 {
-int = int * -1;
-return(int);
+n = n * -1;
+return(n);
 }
 else
 {
-return(int);
+return(n);
 }
 }
