@@ -3,7 +3,7 @@
  * main - check for multiples of 3 and 5
  *
  * Return: 0 always
- */
+*/
 int main(void)
 {
 	int x = 1024, y, sum = 0;
