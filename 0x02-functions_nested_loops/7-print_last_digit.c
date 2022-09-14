@@ -14,7 +14,7 @@ if (n < 0)
 n = -n;
 lastDigit = n % 10;
 }
-if (lastdigit < 0)
+if (lastDigit < 0)
 {
 lastDigit = -lastDigit;
 }
