@@ -8,7 +8,7 @@
 void print_most_numbers(void)
 {
 int n = 48;
-while (n < 58 && n != (2 || 4))
+while ((n < 58) && (n != (2 || 4)))
 {
 _putchar(n);
 n++;
