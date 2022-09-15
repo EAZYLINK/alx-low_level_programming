@@ -6,7 +6,7 @@
  * Return: return nothing
  */
 
-voint print_square(int size)
+void print_square(int size)
 {
 int n1, n2;
 if (size > 0)
