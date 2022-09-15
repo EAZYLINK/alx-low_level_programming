@@ -18,7 +18,7 @@ for (space = 0; space < line; space++)
 _putchar(' ');
 }
 _putchar('\\');
-if (line = (n - 1))
+if (line == (n - 1))
 {
 continue;
 }
