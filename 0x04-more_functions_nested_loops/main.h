@@ -3,10 +3,10 @@
 
 #include <stdio.h>
 
-int _putchar(char c);
-int _isupper(int c);
-int _isdigit(int c);
-int mul(int a, int b);
+int _putchar(char);
+int _isupper(int);
+int _isdigit(int);
+int mul(int, int);
 void print-numbers(void);
 void print_most_numbers(void);
 void more_numbers(void);
