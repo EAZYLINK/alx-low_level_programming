@@ -2,7 +2,7 @@
 
 /**
  * _strlen: function that returns the length of a string
- * @s: string whose legth if required
+ * @s: string
  * Return: returns the length of s
  */
 
@@ -12,7 +12,7 @@ int len, count;
 count = 0;
 for (len = 0; s[len]; len++)
 {
-count ++;
+count++;
 }
 return (count);
 }
