@@ -15,7 +15,7 @@ sum = 0;
 while (sum <= 2645)
 {
 password = rand() % 128;
-aum += password;
+sum += password;
 printf("%c", password);
 }
 printf("%c", 2772 - sum);
