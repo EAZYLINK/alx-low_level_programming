@@ -15,13 +15,13 @@ while (s[i] != '\0')
 i++;
 }
 j = i - 1;
-k = j/2;
+k = j / 2;
 while (k >= 0)
 {
 a = s[j - k];
 b = s[k];
 s[k] = a;
-s[j-k] = b;
+s[j - k] = b;
 k--;
 }
 }
