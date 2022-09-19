@@ -11,7 +11,7 @@ int counter = 0;
 int i;
 while (counter >= 0)
 {
-if (str[counter] == '\n')
+if (str[counter] == '\0')
 break;
 counter++;
 }
