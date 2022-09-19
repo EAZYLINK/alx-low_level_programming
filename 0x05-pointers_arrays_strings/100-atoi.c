@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * atoi - function to convert string to integer
+ * _atoi - function to convert string to integer
  * @s: parameter
  * Return: returns integer
  */
@@ -13,11 +13,11 @@ while(*(s + count) != '\0')
 {
 if (size > 0 && (*(s + count) < '0' || *(s + count) > '9'))
 break;
-if(*(s + count) == '-')
+if (*(s + count) == '-')
 	k *= -1;
 if ((*(s + count) >= '0') && (*(s + count) <= '9'))
 {
-if(size > 0)
+if (size > 0)
 m *= 10;
 size++;
 }
@@ -25,7 +25,7 @@ count++;
 }
 for (i = count - size; i < count; i++)
 {
-j = j + ((*(s + i) - 48) * m);
+j = j + ((*(s + i) - 48) *m);
 m /= 10;
 }
 return (j * k);
