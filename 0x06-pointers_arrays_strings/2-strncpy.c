@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcpy - copies string
+ * _strncpy - copies string
  * @dest: destination
  * @src: source
  * @n: integer
@@ -10,10 +10,12 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-for (n = 0; src[n] != '\0'; n++)
+int i
+for (i = 0; src[i] != '\0'; i++)
 {
-dest[n] = src[n];
+dest[i] = src[i];
 }
+for (; i < n; i++)
 dest[n] = '\0';
 return (dest);
 }
