@@ -29,7 +29,6 @@ else
 putchar('.');
 }
 }
-
 /**
  * print_buffer - prints a buffer
  * @b: buffer to print
