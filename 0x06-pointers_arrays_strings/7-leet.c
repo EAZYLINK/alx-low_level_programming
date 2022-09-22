@@ -8,15 +8,25 @@
 
 char *leet(char *str)
 {
-int n1 = 0, n2;
-char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
-while (str[++n1])
-{
-for (n2 = 0; n2 <= 7; n2++)
-{
-if (str[n1] == leet[n2] || str[n1] - 32 == leet[n2])
-str[n1] = n2 + '0';
-}
-}
-return (str);
+	int stringCount, leetCount;
+	char leetLetters[] = "aAeEoOtTlL";
+	char leetNums[] = "4433007711";
+
+/*  scan through string */
+	stringCount = 0;
+	while (str[stringCount] != '\0')
+/* check whether leetLetter is found */
+	{
+		leetCount = 0;
+		while (leetCount < 10)
+		{
+			if (leetLetters[leetCount] == str[stringCount])
+			{
+				str[stringCount] = leetNums[leetCount];
+			}
+			leetCount++;
+		}
+		stringCount++;
+	}
+	return (str);
 }
