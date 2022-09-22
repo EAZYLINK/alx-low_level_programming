@@ -2,6 +2,7 @@
 
 /**
  * string_toupper - returns the the upper case letter
+ * @str: parameter
  * Return: returns uppercase
  */
 
