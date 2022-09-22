@@ -23,7 +23,7 @@ char rot13[52] = {'N', 'O', 'P', 'Q', 'R', 'S',
 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'};
 while (str[++i])
 {
-for (j = 0; j < 52; j++)
+for (j = 0; j < 53; j++)
 {
 if (str[i] == alpha[j])
 {
