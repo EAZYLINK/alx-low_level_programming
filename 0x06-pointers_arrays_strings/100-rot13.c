@@ -18,7 +18,6 @@ char *rot13(char *s)
 		     'm', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
 		     'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
 		     'M'};
-
 	for (stringCount = 0; s[stringCount] != '\0'; stringCount++)
 	{
 		for (rotation = 0; rotation < 53; rotation++)
