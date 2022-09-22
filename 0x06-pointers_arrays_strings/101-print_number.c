@@ -2,7 +2,6 @@
 /**
  *print_number - prints an integer.
  *@n: integer to be printed.
- *
  *Return: void.
  */
 
@@ -16,7 +15,6 @@ if (n < 0)
 _putchar(45);
 num = -n;
 }
-
 if (num / 10)
 {
 print_number(num / 10);
