@@ -13,6 +13,13 @@ return (n);
 return (_sqrt(0, n));
 }
 
+/**
+ * _sqrt - main root
+ * @i: an integer
+ * @n: second integer
+ * Return: returns root
+ */
+
 int _sqrt(int n, int i)
 {
 if (n > i / 2)
