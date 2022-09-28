@@ -3,7 +3,6 @@
 /**
  * _sqrt_recursion - finds the natural square root
  * @n: given number
- * _sqrt - returns real root
  * Return: returns the square root
  */
 
@@ -13,6 +12,13 @@ if (n == 0 || n == 1)
 return (n);
 return (_sqrt(0, n));
 }
+
+/**
+ * _sqrt - main root
+ * @i: an integer
+ * @n: second integer
+ * Return: returns root
+ */
 
 int _sqrt(int n, int i)
 {
