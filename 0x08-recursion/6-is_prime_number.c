@@ -17,7 +17,7 @@ return (is_prime(n, start));
 /**
  * is_prime - checks for prime number
  * @n: integer to be checked
- * @sart: where to start checking from
+ * @start: where to start checking from
  * Return: returns 1 if prime and 0 otherwise
  */
 int is_prime(int n, int start)
