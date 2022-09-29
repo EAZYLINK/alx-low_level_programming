@@ -12,7 +12,7 @@ int index = 0;
 int len = _strlen(s);
 if (!(*s))
 return (1);
-return(check_palindrome(s, len, index));
+return (check_palindrome(s, len, index));
 }
 
 /**
@@ -24,10 +24,10 @@ return(check_palindrome(s, len, index));
 int _strlen(char *s)
 {
 int len = 0;
-if(*(s+len))
+if (*(s+len))
 {
 len++;
-len += _strlen(s+len);
+len += _strlen(s + len);
 }
 return (len);
 }
@@ -36,6 +36,7 @@ return (len);
  * check_palindrome - checks if palindrome number is entered
  * @s: the given string
  * @len: the length of string
+ * @index: index of string
  * Return: returns -1 if palindrome and 0 otherwise
  */
 
