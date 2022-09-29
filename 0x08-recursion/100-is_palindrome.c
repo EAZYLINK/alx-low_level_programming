@@ -24,7 +24,7 @@ return (check_palindrome(s, len, index));
 int _strlen(char *s)
 {
 int len = 0;
-if (*(s+len))
+if (*(s + len))
 {
 len++;
 len += _strlen(s + len);
