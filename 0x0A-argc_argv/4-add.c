@@ -15,13 +15,13 @@ if (argc == 3)
 {
 a = atoi(argv[1]);
 b = atoi(argv[2]);
-printf("%d", a +b);
+printf("%d", a + b);
 return (0);
 }
 else if (argv[1] == '\0')
 {
 printf("%d\n", 0);
-return (0);   
+return (0);
 }
 else
 {
