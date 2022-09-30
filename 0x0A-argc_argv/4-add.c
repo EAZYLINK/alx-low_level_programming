@@ -10,12 +10,12 @@
 
 int main(int argc, char *argv[])
 {
-int a, b;
-if (argc == 3)
+int i, b = 0;
+if (argc >= 3)
 {
-a = atoi(argv[1]);
-b = atoi(argv[2]);
-printf("%d", a +b);
+for (i = 1; i < argc; i++)
+b += atoi(argv[i]);
+printf("%d\n", b);
 return (0);
 }
 else if (argv[1] == '\0')
