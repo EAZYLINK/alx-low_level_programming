@@ -18,7 +18,7 @@ b += atoi(argv[i]);
 printf("%d\n", b);
 return (0);
 }
-else if (argv[1] == '\0')
+else if (atoi(argv[1]) == 0)
 {
 printf("%d\n", 0);
 return (0);   
