@@ -17,6 +17,7 @@ a = atoi(argv[1]);
 b = atoi(argv[2]);
 printf("%d", a * b);
 }
+else
 printf("Error\n");
 return (1);
 }
