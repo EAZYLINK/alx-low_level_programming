@@ -2,10 +2,10 @@
 #include <stdlib.h> 
   
 /** 
-*main - adds positive numbers 
-*@argc: number of arguments 
-*@argv: array of arguments 
-*Return: 0 on success, 1 on failure 
+*main - adds positive numbers
+*@argc: number of arguments
+*@argv: array of arguments
+*Return: 0 on success, 1 on failure
 */
 
 int main(int argc, char *argv[])
