@@ -21,5 +21,5 @@ return (NULL);
 p[i] = c;
 }
 return (p);
-free (p);
+free(p);
 }
