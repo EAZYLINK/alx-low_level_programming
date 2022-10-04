@@ -13,7 +13,7 @@ int i, j;
 char *p;
 for (i = 0; s1[i] != '\0'; i++)
 {}
-for (j = 0; s2[j] != '\n'; j++)
+for (j = 0; s2[j] != '\0'; j++)
 {}
 p = malloc((i + j + 2) * sizeof(char));
 if (p == NULL)
