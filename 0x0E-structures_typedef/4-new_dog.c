@@ -8,12 +8,12 @@
 
 int _strlen(char *str)
 {
-    int count = 0;
-    while(str)
-    {
-        count++;
-    }
-    return (count);
+int count = 0;
+while (str)
+{
+count++;
+}
+return (count);
 }
 
 /**
@@ -23,7 +23,7 @@ int _strlen(char *str)
  * Return: copied string
  */
 
-char *_strcopy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 int i;
 for (i = 0; src[i]; i++)
@@ -43,10 +43,10 @@ return (dest);
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *bingo;
-if(name == NULL || age < 0 || owner == NULL)
+if (name == NULL || age < 0 || owner == NULL)
 return (NULL);
 bingo = malloc(sizeof(dog_t));
-if(bingo == NULL)
+if (bingo == NULL)
 return (NULL);
 bingo->name = malloc(sizeof(char) * (_strlen(name) + 1));
 if (bingo->name == NULL)
@@ -61,8 +61,8 @@ free(bingo->name);
 free(bingo);
 return (NULL);
 }
-bingo->name = _strcopy(bingo->name, name);
+bingo->name = _strcpy(bingo->name, name);
 bingo->age = age;
-bingo->owner = _strcopy(bingo->owner, owner);
+bingo->owner = _strcpy(bingo->owner, owner);
 return (bingo);
 }
