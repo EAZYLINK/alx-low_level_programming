@@ -1,14 +1,21 @@
+#ifndef DOG_H
+#define DOG_H
+
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
- * dog - a constructor
- * 
+ * struct dog - a constructor
+ * @name: first variable
+ * @age: second variable
+ * @owner: third variable
  */
 
 struct dog
 {
-    char *name;
-    float age;
-    char *owner;
-};
+char *name;
+float age;
+char *owner;
+}
+
+#endif /*DOG_H*/
