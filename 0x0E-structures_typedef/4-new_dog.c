@@ -1,66 +1,76 @@
 #include "dog.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
- * _strlen - returns length of string
- * @str: string
- * Return: length of string
- */
-
-int _strlen(char *str)
-{
-int count = 0;
-while (str)
-count++;
-return (count);
-}
-
-/**
- * _strcpy - copies a string
- * @dest: where string is copied into
- * @src: where string is copied from
- * Return: copied string
- */
-
-char *_strcpy(char *dest, char *src)
-{
-int i;
-for (i = 0; src[i]; i++)
-dest[i] = src[i];
-dest[i] = '\0';
-return (dest);
-}
-
-/**
- * new_dog - create a new dog
- * @name: name of new dog
- * @age: age of new dog
- * @owner: owner of new dog
- * Return: created dog
- */
-
+ * new_dog - create new data structure for dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: dog owner
+ *
+ * Return: Pointer to new dog
+ **/
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *bingo;
-if (name == NULL || age < 0 || owner == NULL)
-return (NULL);
-bingo = malloc(sizeof(dog_t));
-if (bingo == NULL)
-return (NULL);
-bingo->name = malloc(sizeof(char) * (_strlen(name) + 1));
-if (bingo->name == NULL)
-{
-free(bingo);
-return (NULL);
+	dog_t *new_dog;
+	int len_name, len_owner;
+
+	new_dog = malloc(sizeof(dog_t));
+	if (new_dog == NULL)
+		return (NULL);
+
+	len_name = _strlen(name);
+	new_dog->name = malloc(sizeof(char) * len_name + 1);
+	if (new_dog->name == NULL)
+	{
+		free(new_dog);
+		return (NULL);
+	}
+	new_dog->name = _strcpy(new_dog->name, name);
+	len_owner = _strlen(owner);
+	new_dog->owner = malloc(sizeof(char) * len_owner + 1);
+	if (new_dog->owner == NULL)
+	{
+		free(new_dog->name);
+		free(new_dog);
+		return (NULL);
+	}
+
+	new_dog->owner = _strcpy(new_dog->owner, owner);
+	new_dog->age = age;
+
+	return (new_dog);
 }
-bingo->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
-if (bingo->owner == NULL)
+
+/**
+ * _strlen - determinates the lenght of a string
+ * @s: pointer to string
+ * Return: the length
+ */
+int _strlen(char *s)
 {
-free(bingo->name);
-free(bingo);
-return (NULL);
+	int a;
+
+	for (a = 0; s[a] != '\0'; a++)
+	;
+	return (a);
 }
-bingo->name = _strcpy(bingo->name, name);
-bingo->age = age;
-bingo->owner = _strcpy(bingo->owner, owner);
-return (bingo);
+
+/**
+ * _strcpy - copies a pointed string
+ * @dest: pointer to the destine string
+ * @src: pointer to the source string
+ * Return: the adress of the destiny string
+ */
+char *_strcpy(char *dest, char *src)
+{
+	int a = 0;
+
+	while (src[a] != '\0')
+	{
+		dest[a] = src[a];
+		a++;
+	}
+
+	dest[a] = '\0';
+	return (dest);
 }
