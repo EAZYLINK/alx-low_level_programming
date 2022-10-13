@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_char - prints characters 
+ * print_char - prints characters
  * @arg: list of arguments
  */
 void print_char(va_list arg)
@@ -62,10 +62,10 @@ va_list args;
 int i = 0, j = 0;
 char *separator = "";
 printer_t funcs[] = {
-    {"c", print_char},
-    {"i", print_int},
-    {"f", print_float},
-    {"s", print_string}
+{"c", print_char},
+{"i", print_int},
+{"f", print_float},
+{"s", print_string}
 };
 
 va_start(args, format);
@@ -76,9 +76,9 @@ while (j < 4 && (*(format + i) != *(funcs[j]).symbol))
 j++;
 if (j < 4)
 {
-    printf("%s", separator);
-    funcs[j].print(args);
-    separator = ", ";
+printf("%s", separator);
+funcs[j].print(args);
+separator = ", ";
 }
 i++;
 }
