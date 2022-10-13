@@ -53,7 +53,7 @@ printf("%s", str);
 
 /**
  * print_all - prints all types of argument
- * format: Type of argument
+ * @format: Type of argument
  * Return: void
  */
 void print_all(const char * const format, ...)
