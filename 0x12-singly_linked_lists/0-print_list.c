@@ -8,13 +8,13 @@
 
 size_t print_list(const list_t *h)
 {
-const list_t *list;
+const list_t *tmp;
 unsigned int i;
-list = h;
-for (i = 0; list; i++)
+tmp = h;
+for (i = 0; tmp; i++)
 {
-printf("[%u] %s\n", list->len, list->str);
-list = list->next;
+printf("[%u] %s\n", tmp->len, tmp->str);
+tmp = tmp->next;
 }
 return (i);
 }
