@@ -1,12 +1,12 @@
 #include <stdio.h>
-void __attribute__((constructor)) hare(void);
+void __attribute__((constructor)) printBeforeMain(void);
 
 /**
- * printBefore - prints a string before main function is executed
+ * printBeforeMain - prints a string before main function is executed
  * Return: void
  */
 
-void hare(void)
+void printBeforeMain(void)
 {
 printf("You're beat! and yet, you must allow,\n"
 "I bore my house upon my back!\n");
