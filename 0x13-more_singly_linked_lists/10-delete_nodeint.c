@@ -3,7 +3,7 @@
 /**
  * delete_nodeint_at_index - deletes a node at a given index
  * @head: head node
- * @index of node to be deleted
+ * @index: of node to be deleted
  * Return: integer
  */
 
