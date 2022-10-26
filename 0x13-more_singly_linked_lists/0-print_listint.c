@@ -3,7 +3,7 @@
 /**
  * print_listint - prints list of integers
  * @h: pointer
- * Return: int
+ * Return: size_t
  */
 
 size_t print_listint(const listint_t *h)
