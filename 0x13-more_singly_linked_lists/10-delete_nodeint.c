@@ -9,8 +9,8 @@
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-listint_t old_node = NULL;
-listint_t prev_node = NULL;
+listint_t *old_node = NULL;
+listint_t *prev_node = NULL;
 unsigned int i = 0, list_len = listint_len(*head);
 if ((index > list_len) || (list_len == 0))
 return (-1);
