@@ -23,9 +23,9 @@ i = jump;
 jump += step;
 }
 printf("Value found between indexes [%ld] and [%ld]\n", i, jump);
-jump = jump > size - 1 ? jump : size - 1;
-for (; i < jump && array[i] < value; i++)
+for (; i < size && array[i] < value; i++)
+if (i >= size - 1)
+break;
 printf("Value checked array [%ld] = [%d]\n", i, array[i]);
-printf("Value checked array [%ld] = [%d]\n", i, array[i]);
-return (array[i] == value ? int(i) : -1);
+return (array[i] == value ? (int)i : -1);
 }
