@@ -20,26 +20,26 @@
 */
 int jump_search(int *array, size_t size, int value)
 {
-size_t i, jump, step;
-
-if (array == NULL || size == 0)
+if (array == NULL) {
 return (-1);
-
-step = sqrt(size);
-for (i = jump = 0; jump < size && array[jump] < value;)
-{
-printf("Value checked array[%ld] = [%d]\n", jump, array[jump]);
-i = jump;
-jump += step;
 }
 
-printf("Value found between indexes [%ld] and [%ld]\n", i, jump);
-for (; i < size && array[i] < value; i++)
-{
-if (i >= size - 1)
-break;
-printf("Value checked array [%ld] = [%d]\n", i, array[i]);
+// Determine the jump step
+size_t jump_step = sqrt(size);
+
+// Find the block that contains the value
+size_t left = 0;
+size_t right = jump_step;
+while (right < size && array[right] < value) {
+printf("Comparing value %d with array[%zu] = %d\n", value, right, array[right]);
+left = right;
+right += jump_step;
 }
-printf("Value checked array [%ld] = [%d]\n", i, array[i]);
-return (array[i] == value ? (int)i : -1);
+
+// Perform linear search within the block
+for (size_t i = left; i <= fmin(right, size - 1); i++) {
+printf("Comparing value %d with array[%zu] = %d\n", value, i, array[i]);
+if (array[i] == value) {
+return (i);
+}
 }
