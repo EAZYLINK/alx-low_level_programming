@@ -1,8 +1,3 @@
-/*
-* File: 100-jump.c
-* Auth: Brennan D Baraban
-*/
-
 #include "search_algos.h"
 
 /**
@@ -31,7 +26,7 @@ size_t jump_step = sqrt(size);
 size_t left = 0;
 size_t right = jump_step;
 while (right < size && array[right] < value) {
-printf("Comparing value %d with array[%zu] = %d\n", value, right, array[right]);
+printf("Value checked array[%lu] = [%i]\n", value, right, array[right]);
 left = right;
 right += jump_step;
 }
