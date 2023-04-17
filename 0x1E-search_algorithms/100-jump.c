@@ -26,14 +26,14 @@ size_t jump_step = sqrt(size);
 size_t left = 0;
 size_t right = jump_step;
 while (right < size && array[right] < value) {
-printf("Value checked array[%lu] = [%i]\n", value, right, array[right]);
+printf("Value checked array[%ld] = [%d]\n", value, right, array[right]);
 left = right;
 right += jump_step;
 }
 
 // Perform linear search within the block
 for (size_t i = left; i <= fmin(right, size - 1); i++) {
-printf("Comparing value %d with array[%zu] = %d\n", value, i, array[i]);
+printf("Value checked array[%ld] = [%d]\n", value, i, array[i]);
 if (array[i] == value) {
 return (i);
 }
